@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Java Basics Notes",
+      "type": "text",
+      "content": "Java Programming Basics:\n\n1. Java is an object-oriented programming language\n2. Platform independent - Write Once Run Anywhere (WORA)\n3. Key features: Simple, Secure, Portable, Multithreaded\n\nBasic Syntax:\n- Every program must have a main method\n- Class names should start with capital letter\n- Method names should start with lowercase",
+      "description": "Basic concepts of Java programming",
+      "date": "2024-01-15",
+      "tags": ["java", "basics", "programming"]
+    },
+    {
+      "id": "2",
+      "title": "OOP Concepts",
+      "type": "text", 
+      "content": "Object Oriented Programming Concepts:\n\n1. Encapsulation: Binding data and methods together\n2. Inheritance: Acquiring properties of parent class\n3. Polymorphism: One interface, multiple implementations\n4. Abstraction: Hiding implementation details",
+      "description": "Four pillars of Object Oriented Programming",
+      "date": "2024-01-16",
+      "tags": ["oop", "concepts", "programming"]
+    }
+  ]
+}
