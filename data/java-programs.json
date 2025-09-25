@@ -1,0 +1,22 @@
+{
+  "programs": [
+    {
+      "id": "1",
+      "name": "Calculator Program",
+      "description": "A simple calculator with basic arithmetic operations",
+      "code": "import java.util.Scanner;\n\npublic class Calculator {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        System.out.println(\"Simple Calculator\");\n        System.out.println(\"Enter first number: \");\n        double num1 = scanner.nextDouble();\n        \n        System.out.println(\"Enter operator (+, -, *, /): \");\n        char operator = scanner.next().charAt(0);\n        \n        System.out.println(\"Enter second number: \");\n        double num2 = scanner.nextDouble();\n        \n        double result;\n        switch(operator) {\n            case '+':\n                result = num1 + num2;\n                break;\n            case '-':\n                result = num1 - num2;\n                break;\n            case '*':\n                result = num1 * num2;\n                break;\n            case '/':\n                if (num2 != 0) {\n                    result = num1 / num2;\n                } else {\n                    System.out.println(\"Error: Division by zero!\");\n                    return;\n                }\n                break;\n            default:\n                System.out.println(\"Invalid operator!\");\n                return;\n        }\n        \n        System.out.println(\"Result: \" + result);\n    }\n}",
+      "language": "Java",
+      "date": "2024-01-15",
+      "tags": ["beginner", "calculator", "arithmetic"]
+    },
+    {
+      "id": "2", 
+      "name": "Fibonacci Series",
+      "description": "Generate Fibonacci series up to n terms",
+      "code": "public class Fibonacci {\n    public static void main(String[] args) {\n        int n = 10, firstTerm = 0, secondTerm = 1;\n        System.out.println(\"Fibonacci Series till \" + n + \" terms:\");\n        \n        for (int i = 1; i <= n; ++i) {\n            System.out.print(firstTerm + \", \");\n            int nextTerm = firstTerm + secondTerm;\n            firstTerm = secondTerm;\n            secondTerm = nextTerm;\n        }\n    }\n}",
+      "language": "Java", 
+      "date": "2024-01-16",
+      "tags": ["mathematics", "series", "algorithm"]
+    }
+  ]
+}
